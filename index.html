@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+       <div class="fof">
+        <h1>4</h1>
+        <div class="eye">
+            <div class="upper Lid"></div>
+            <div class="retina"></div>
+            <div class="down Lid"></div>
+        </div>
+        <h1>4</h1>
+       </div>
+       <h2>Nothing Dey Here!</h2>
+       <button>Go To The Main Page</button>
+    </main>
+    <script>
+        function startAnimation(){
+            animateElements(); //Start the animation
+
+            setInterval(animateElements,7000);//Repeat it every 7 seconds
+        }
+        function animateElements(){
+            document.querySelector('.upper').classList.toggle('upper-animation');
+            document.querySelector('.retina').classList.toggle('retina-animation');
+            document.querySelector('.down').classList.toggle('down-animation');
+        }
+        window.onload = startAnimation();
+    </script>
+</body>
+</html>
